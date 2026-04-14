@@ -64,16 +64,26 @@ export function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 1.4 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-juju-black/50 hover:text-juju-black transition-colors z-10"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-juju-black/70 hover:text-juju-black transition-colors"
         aria-label={t('scroll_indicator')}
       >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          className="grid h-12 w-8 place-items-start rounded-full border-2 border-juju-black/30 pt-2"
+        <span className="text-[10px] font-bold uppercase tracking-[0.2em]">
+          {t('scroll_indicator')}
+        </span>
+        <motion.svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="h-5 w-5"
+          animate={{ y: [0, 6, 0] }}
+          transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
+          aria-hidden="true"
         >
-          <span className="block h-2 w-1 rounded-full bg-juju-black/70" />
-        </motion.div>
+          <path d="M6 9l6 6 6-6" />
+        </motion.svg>
       </motion.a>
     </section>
   );
