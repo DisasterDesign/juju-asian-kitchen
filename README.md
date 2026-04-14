@@ -4,6 +4,8 @@ Website for **JUJU Asian Kitchen** — Asian street food restaurant in Mamilla M
 
 Single-page marketing site with Hebrew (RTL) + English (LTR) support, built on Next.js 15 App Router.
 
+**Live:** https://juju-asian-kitchen.pages.dev
+
 ## Stack
 
 - **Next.js 15** (App Router, React 19)
@@ -45,19 +47,34 @@ src/
 
 ## Deployment — Cloudflare Pages
 
-The repo is wired to deploy via Cloudflare Pages Git integration. In the
-Cloudflare dashboard connect this repo and use these build settings:
+Deployed via **direct upload** with `wrangler pages deploy`. To ship an update:
+
+```bash
+npm run pages:ship
+```
+
+This runs `@cloudflare/next-on-pages` to build, then uploads `.vercel/output/static`
+to the `juju-asian-kitchen` Pages project (production branch `main`, with
+`nodejs_compat` enabled).
+
+Breakdown:
+
+```bash
+npm run pages:build    # @cloudflare/next-on-pages → .vercel/output/static
+npm run pages:deploy   # wrangler pages deploy ...
+```
+
+### Switching to Git-based auto-deploy (optional)
+
+If you prefer auto-deploy on `git push` instead of the CLI flow, connect the
+repo in the Cloudflare dashboard (Pages → Connect to Git), using:
 
 - **Framework preset:** Next.js
 - **Build command:** `npx @cloudflare/next-on-pages@1`
 - **Build output directory:** `.vercel/output/static`
-- **Node version:** 20 (or latest LTS)
-- **Environment variables (optional):**
+- **Compatibility flags:** `nodejs_compat`
+- **Environment variables:**
   - `NEXT_PUBLIC_SITE_URL` — production URL
-  - `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` — only if switching to Google Maps JS API
-
-Every push to `main` triggers a production deploy; pull requests get preview
-deployments automatically.
 
 ## Planning documents
 
