@@ -1,5 +1,5 @@
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { ScrollReveal } from '@/components/illustrations/ScrollReveal';
 import { FloatingElement } from '@/components/illustrations/FloatingElement';
 import { SectionTitle } from '@/components/ui/SectionTitle';
@@ -27,15 +27,27 @@ export function AboutSection() {
         <ScrollReveal delay={0.2} className="relative flex justify-center">
           <FloatingElement duration={8} distance={14}>
             <Image
-              src="/illustrations/characters/illustrations-sheet.png"
+              src="/illustrations/compositions/about-composition-yellow.png"
               alt=""
-              width={800}
-              height={600}
-              className="w-full max-w-md h-auto mix-blend-multiply"
+              width={2400}
+              height={1350}
+              className="w-full max-w-xl h-auto"
               aria-hidden="true"
             />
           </FloatingElement>
         </ScrollReveal>
+      </div>
+
+      {/* Accent illustration floating in the background at the bottom */}
+      <div className="pointer-events-none absolute bottom-0 right-0 w-72 md:w-96 opacity-30 translate-x-1/4 translate-y-1/4">
+        <Image
+          src="/illustrations/compositions/about-composition-green.png"
+          alt=""
+          width={2400}
+          height={1350}
+          className="w-full h-auto"
+          aria-hidden="true"
+        />
       </div>
 
       <div className="pointer-events-none absolute -left-20 top-1/2 h-40 w-40 rounded-full bg-juju-yellow/10 blur-3xl" />

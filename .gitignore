@@ -35,3 +35,7 @@ next-env.d.ts
 # Cloudflare Pages / Vercel build output
 .vercel/
 .wrangler/
+
+# Raw asset source folders (not committed — only resized copies in public/)
+/photos/
+/illustrations/
