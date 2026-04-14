@@ -26,8 +26,6 @@ export function Header() {
     };
   }, [mobileOpen]);
 
-  const inverted = !scrolled;
-
   return (
     <>
       <header
@@ -35,35 +33,30 @@ export function Header() {
           'fixed inset-x-0 top-0 z-40 transition-all duration-300',
           scrolled
             ? 'bg-white/90 backdrop-blur-md border-b border-juju-black/5 shadow-sm'
-            : 'bg-transparent'
+            : 'bg-white/40 backdrop-blur-sm'
         )}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 md:px-8 h-16 md:h-20">
           <a href="#hero" aria-label="JUJU" className="shrink-0">
             <JujuLogo
               variant="horizontal"
-              color={inverted ? 'coral' : 'coral'}
+              color="coral"
               className="h-8 md:h-10 w-auto"
             />
           </a>
 
           <div className="hidden md:flex items-center gap-8">
-            <Navigation inverted={inverted} />
+            <Navigation inverted={false} />
           </div>
 
           <div className="hidden md:flex items-center gap-3">
-            <LanguageSwitcher inverted={inverted} />
+            <LanguageSwitcher inverted={false} />
             <a
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className={cn(
-                'grid h-9 w-9 place-items-center rounded-full border transition-colors',
-                inverted
-                  ? 'border-white/40 text-white hover:bg-white hover:text-juju-black'
-                  : 'border-juju-black/20 text-juju-black hover:bg-juju-black hover:text-white'
-              )}
+              className="grid h-9 w-9 place-items-center rounded-full border border-juju-black/20 text-juju-black hover:bg-juju-black hover:text-white transition-colors"
             >
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5ZM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm5.5-1.25a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z" />
@@ -76,10 +69,7 @@ export function Header() {
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle menu"
             aria-expanded={mobileOpen}
-            className={cn(
-              'md:hidden grid h-10 w-10 place-items-center rounded-full transition-colors',
-              inverted ? 'text-white hover:bg-white/10' : 'text-juju-black hover:bg-juju-black/5'
-            )}
+            className="md:hidden grid h-10 w-10 place-items-center rounded-full text-juju-black hover:bg-juju-black/5 transition-colors"
           >
             <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
               {mobileOpen ? (
