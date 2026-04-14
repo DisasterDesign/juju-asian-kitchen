@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "title": "JUJU Asian Kitchen | מטבח אסייתי בממילא ירושלים",
+    "description": "JUJU - מטבח אסייתי איכותי בקניון ממילא, ירושלים. נודלס, דימסאם, סושי ועוד. כשר למהדרין."
+  },
+  "nav": {
+    "about": "אודות",
+    "menu": "תפריט",
+    "gallery": "גלריה",
+    "location": "מיקום",
+    "instagram": "אינסטגרם"
+  },
+  "hero": {
+    "tagline": "מטבח אסייתי. ממילא, ירושלים.",
+    "cta_menu": "לתפריט",
+    "cta_location": "איפה אנחנו",
+    "scroll_indicator": "גלול"
+  },
+  "about": {
+    "title": "הסיפור שלנו",
+    "text": "JUJU הוא מטבח אסייתי איכותי בלב ממילא, ירושלים. אוכל רחוב שמגיע מהרחובות של טוקיו, בנגקוק וסיאול — מבושל מאפס, מוגש מהר, כשר למהדרין.",
+    "highlight": "כי אוכל טוב לא צריך לקחת שעה."
+  },
+  "menu": {
+    "title": "מה אוכלים",
+    "subtitle": "ישר מהרחובות של אסיה",
+    "categories": {
+      "noodles": "נודלס",
+      "dimsum": "דימסאם",
+      "sushi": "סושי ומאקי",
+      "buns": "באנים",
+      "sides": "צדיות",
+      "drinks": "שתייה"
+    },
+    "new": "חדש",
+    "popular": "פופולרי",
+    "currency": "₪"
+  },
+  "gallery": {
+    "title": "מאחורי הקלעים",
+    "subtitle": "רגעים מה-JUJU"
+  },
+  "instagram": {
+    "title": "עוקבים אחרינו",
+    "handle": "@juju_asian_kitchen",
+    "follow": "לאינסטגרם"
+  },
+  "location": {
+    "title": "בואו לאכול",
+    "address": "קניון ממילא, ירושלים",
+    "hours_title": "שעות פעילות",
+    "sun_thu": "ראשון-חמישי",
+    "sun_thu_hours": "11:00 – 23:00",
+    "fri": "שישי",
+    "fri_hours": "11:00 – 15:00",
+    "sat": "מוצאי שבת",
+    "sat_hours": "שעה לאחר צאת שבת – 23:00",
+    "kosher": "כשר למהדרין",
+    "navigate": "נווט אלינו",
+    "phone_label": "טלפון"
+  },
+  "contact": {
+    "title": "דברו איתנו",
+    "phone": "טלפון",
+    "email": "אימייל",
+    "waze": "ניווט בווייז"
+  },
+  "footer": {
+    "rights": "© 2026 JUJU Asian Kitchen. כל הזכויות שמורות.",
+    "kosher_note": "כשר למהדרין"
+  }
+}

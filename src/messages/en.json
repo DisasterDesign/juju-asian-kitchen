@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "title": "JUJU Asian Kitchen | Asian Street Food in Mamilla, Jerusalem",
+    "description": "JUJU - Quality Asian street kitchen in Mamilla Mall, Jerusalem. Noodles, dim sum, sushi and more. Strictly kosher."
+  },
+  "nav": {
+    "about": "About",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "location": "Location",
+    "instagram": "Instagram"
+  },
+  "hero": {
+    "tagline": "Asian Street Kitchen. Mamilla, Jerusalem.",
+    "cta_menu": "See Menu",
+    "cta_location": "Find Us",
+    "scroll_indicator": "Scroll"
+  },
+  "about": {
+    "title": "Our Story",
+    "text": "JUJU is a quality Asian kitchen in the heart of Mamilla, Jerusalem. Street food inspired by the alleys of Tokyo, Bangkok and Seoul — made from scratch, served fast, strictly kosher.",
+    "highlight": "Because great food doesn't need to take an hour."
+  },
+  "menu": {
+    "title": "The Menu",
+    "subtitle": "Straight from the streets of Asia",
+    "categories": {
+      "noodles": "Noodles",
+      "dimsum": "Dim Sum",
+      "sushi": "Sushi & Maki",
+      "buns": "Buns",
+      "sides": "Sides",
+      "drinks": "Drinks"
+    },
+    "new": "New",
+    "popular": "Popular",
+    "currency": "₪"
+  },
+  "gallery": {
+    "title": "Behind the Scenes",
+    "subtitle": "Moments from JUJU"
+  },
+  "instagram": {
+    "title": "Follow the flavor",
+    "handle": "@juju_asian_kitchen",
+    "follow": "Follow on Instagram"
+  },
+  "location": {
+    "title": "Come Eat",
+    "address": "Mamilla Mall, Jerusalem",
+    "hours_title": "Opening Hours",
+    "sun_thu": "Sun-Thu",
+    "sun_thu_hours": "11:00 AM – 11:00 PM",
+    "fri": "Fri",
+    "fri_hours": "11:00 AM – 3:00 PM",
+    "sat": "Sat Night",
+    "sat_hours": "One hour after Shabbat – 11:00 PM",
+    "kosher": "Strictly Kosher (Mehadrin)",
+    "navigate": "Get Directions",
+    "phone_label": "Phone"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "phone": "Phone",
+    "email": "Email",
+    "waze": "Navigate with Waze"
+  },
+  "footer": {
+    "rights": "© 2026 JUJU Asian Kitchen. All rights reserved.",
+    "kosher_note": "Strictly Kosher (Mehadrin)"
+  }
+}
