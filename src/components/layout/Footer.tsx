@@ -44,6 +44,18 @@ export function Footer() {
         <div className="mt-14 pt-8 border-t border-white/10 text-xs text-white/50 text-center">
           {t('rights')}
         </div>
+
+        <div className="mt-3 text-xs text-white/30 text-center">
+          {t('built_by')}{' '}
+          <a
+            href="https://www.fuzionwebz.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-juju-coral transition-colors"
+          >
+            Fuzion Webz
+          </a>
+        </div>
       </div>
     </footer>
   );

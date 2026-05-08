@@ -67,6 +67,7 @@
   },
   "footer": {
     "rights": "© 2026 JUJU Asian Kitchen. All rights reserved.",
-    "kosher_note": "Strictly Kosher (Mehadrin)"
+    "kosher_note": "Strictly Kosher (Mehadrin)",
+    "built_by": "Built by"
   }
 }
