@@ -25,8 +25,8 @@ export function HeroSection() {
           poster="/images/hero/hero-fallback.jpg"
           aria-hidden="true"
         >
-          <source src="/videos/hero-loop.webm" type="video/webm" />
-          <source src="/videos/hero-loop.mp4" type="video/mp4" />
+          <source src="/videos/hero-phone.mp4" type="video/mp4" media="(max-width: 767px)" />
+          <source src="/videos/hero-web.mp4" type="video/mp4" />
         </video>
         {/* Readability overlay — subtle white wash so text stays crisp even when characters pass under it */}
         <div className="absolute inset-0 bg-white/25" />
