@@ -28,7 +28,7 @@ export function InstagramSection() {
             href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            variant="primary"
+            variant="light"
             size="lg"
           >
             {t('follow')}

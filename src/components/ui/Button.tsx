@@ -1,7 +1,7 @@
 import { forwardRef, type ButtonHTMLAttributes, type AnchorHTMLAttributes } from 'react';
 import { cn } from '@/lib/utils';
 
-type Variant = 'primary' | 'secondary' | 'dark-outline' | 'ghost';
+type Variant = 'primary' | 'secondary' | 'dark-outline' | 'ghost' | 'dark' | 'light';
 type Size = 'sm' | 'md' | 'lg';
 
 const variantStyles: Record<Variant, string> = {
@@ -12,6 +12,9 @@ const variantStyles: Record<Variant, string> = {
   'dark-outline':
     'bg-transparent border-2 border-juju-black text-juju-black hover:bg-juju-black hover:text-white',
   ghost: 'bg-transparent text-juju-black hover:bg-juju-muted',
+  dark: 'bg-juju-black text-white hover:bg-juju-coral shadow-lg shadow-black/30 hover:shadow-juju-coral/40',
+  light:
+    'bg-white text-juju-black border-2 border-juju-black hover:bg-juju-black hover:text-white shadow-lg shadow-black/15',
 };
 
 const sizeStyles: Record<Size, string> = {

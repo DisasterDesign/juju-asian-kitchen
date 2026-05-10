@@ -49,10 +49,10 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 1.1, ease: 'easeOut' }}
           className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
-          <ButtonLink href={`#${SECTION_IDS.menu}`} variant="primary" size="lg">
+          <ButtonLink href={`#${SECTION_IDS.menu}`} variant="light" size="lg">
             {t('cta_menu')}
           </ButtonLink>
-          <ButtonLink href={`#${SECTION_IDS.location}`} variant="dark-outline" size="lg">
+          <ButtonLink href={`#${SECTION_IDS.location}`} variant="light" size="lg">
             {t('cta_location')}
           </ButtonLink>
         </motion.div>
