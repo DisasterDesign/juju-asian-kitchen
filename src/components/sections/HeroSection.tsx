@@ -14,15 +14,14 @@ export function HeroSection() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white text-juju-black"
     >
       {/* Background video */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden bg-juju-black">
         <video
           autoPlay
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
           className="absolute inset-0 h-full w-full object-cover [filter:contrast(1.15)_saturate(1.2)]"
-          poster="/images/hero/hero-fallback.jpg"
           aria-hidden="true"
         >
           <source src="/videos/hero-phone.mp4" type="video/mp4" media="(max-width: 767px)" />
@@ -38,7 +37,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: 'easeOut' }}
-          className="text-xl md:text-3xl lg:text-4xl font-black text-juju-black max-w-3xl [text-shadow:0_2px_18px_rgba(255,255,255,0.85),0_1px_2px_rgba(0,0,0,0.15)]"
+          className="text-xl md:text-3xl lg:text-4xl font-black text-juju-coral max-w-3xl [text-shadow:0_2px_4px_rgba(0,0,0,0.45),0_0_18px_rgba(0,0,0,0.25)]"
         >
           {t('tagline')}
         </motion.p>
