@@ -21,15 +21,15 @@ export function HeroSection() {
           loop
           playsInline
           preload="metadata"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover [filter:contrast(1.15)_saturate(1.2)]"
           poster="/images/hero/hero-fallback.jpg"
           aria-hidden="true"
         >
           <source src="/videos/hero-phone.mp4" type="video/mp4" media="(max-width: 767px)" />
           <source src="/videos/hero-web.mp4" type="video/mp4" />
         </video>
-        {/* Readability overlay — subtle white wash so text stays crisp even when characters pass under it */}
-        <div className="absolute inset-0 bg-white/25" />
+        {/* Readability gradient — denser at top/bottom (where tagline + CTAs live), transparent in the middle so the saturated illustration shines through */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/55 via-white/0 to-white/55" />
       </div>
 
       {/* Content */}
@@ -38,7 +38,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: 'easeOut' }}
-          className="text-xl md:text-3xl lg:text-4xl font-black text-juju-black max-w-3xl drop-shadow-sm"
+          className="text-xl md:text-3xl lg:text-4xl font-black text-juju-black max-w-3xl [text-shadow:0_2px_18px_rgba(255,255,255,0.85),0_1px_2px_rgba(0,0,0,0.15)]"
         >
           {t('tagline')}
         </motion.p>

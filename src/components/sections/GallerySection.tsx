@@ -35,16 +35,15 @@ export function GallerySection() {
           align="center"
         />
 
-        <div className="columns-2 md:columns-3 lg:columns-4 gap-3 md:gap-4 [&>*]:mb-3 md:[&>*]:mb-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
           {galleryImages.map((img, i) => (
             <ScrollReveal key={img.src} delay={i * 0.05}>
-              <div className="break-inside-avoid overflow-hidden rounded-2xl shadow-sm bg-juju-muted">
+              <div className="relative aspect-square overflow-hidden rounded-2xl shadow-sm bg-juju-muted">
                 <Image
                   src={img.src}
                   alt={img.alt}
-                  width={1400}
-                  height={1400}
-                  className="w-full h-auto object-cover transition-transform duration-500 hover:scale-[1.03]"
+                  fill
+                  className="object-cover transition-transform duration-500 hover:scale-[1.03]"
                   sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                 />
               </div>
