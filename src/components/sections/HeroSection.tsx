@@ -27,8 +27,6 @@ export function HeroSection() {
           <source src="/videos/hero-phone.mp4" type="video/mp4" media="(max-width: 767px)" />
           <source src="/videos/hero-web.mp4" type="video/mp4" />
         </video>
-        {/* Readability gradient — denser at top/bottom (where tagline + CTAs live), transparent in the middle so the saturated illustration shines through */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/55 via-white/0 to-white/55" />
       </div>
 
       {/* Content */}
@@ -37,7 +35,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: 'easeOut' }}
-          className="text-xl md:text-3xl lg:text-4xl font-black text-juju-coral max-w-3xl [text-shadow:0_2px_4px_rgba(0,0,0,0.45),0_0_18px_rgba(0,0,0,0.25)]"
+          className="text-xl md:text-3xl lg:text-4xl font-black text-juju-green max-w-3xl [text-shadow:0_2px_4px_rgba(0,0,0,0.5),0_0_20px_rgba(0,0,0,0.3)]"
         >
           {t('tagline')}
         </motion.p>
