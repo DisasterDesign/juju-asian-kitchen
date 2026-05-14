@@ -41,7 +41,9 @@ export function Navigation({
           onClick={onNavigate}
           className={cn(
             'relative font-semibold transition-colors duration-200 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-juju-coral after:transition-all hover:after:w-full',
-            inverted ? 'text-white hover:text-juju-coral' : 'text-juju-black hover:text-juju-coral'
+            inverted
+              ? 'text-white hover:text-juju-coral [text-shadow:0_2px_6px_rgba(0,0,0,0.55)]'
+              : 'text-juju-black hover:text-juju-coral'
           )}
         >
           {t(item.key)}
